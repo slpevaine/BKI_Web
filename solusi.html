@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solusi BKIConnect — Konektivitas Satelit Terkelola untuk Kapal</title>
+<meta name="description" content="BKIConnect: kuota dan koneksi internet di laut, jaringan kapal, integrasi operasional, dan monitoring 24/7. Paket bertingkat Lite, Standard, Plus, dan Prime dengan jalur cadangan.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol><symbol id="i-wifi" viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></symbol><symbol id="i-activity" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol><symbol id="i-headset" viewBox="0 0 24 24"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/><path d="M21 16v2a4 4 0 0 1-4 4h-5"/></symbol><symbol id="i-ship" viewBox="0 0 24 24"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76"/><path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6M12 10v4M12 2v3"/></symbol><symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol><symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol><symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol><symbol id="i-video" viewBox="0 0 24 24"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/></symbol><symbol id="i-dish" viewBox="0 0 24 24"><path d="M4 10a7.31 7.31 0 0 0 10 10Z"/><path d="m9 15 3-3M17 13a6 6 0 0 0-6-6M21 13A10 10 0 0 0 11 3"/></symbol><symbol id="i-router" viewBox="0 0 24 24"><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6.01 18H6M10.01 18H10M15 10v4M17.84 7.17a4 4 0 0 0-5.66 0M20.66 4.34a8 8 0 0 0-11.31 0"/></symbol><symbol id="i-layers" viewBox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65M22 12.65l-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol><symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></symbol><symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol><symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol><symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol><symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol><symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol><symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01"/><circle cx="12" cy="12" r="10"/></symbol><symbol id="i-radar" viewBox="0 0 24 24"><path d="M19.07 4.93A10 10 0 0 0 6.99 3.34M4 6h.01M2.29 9.62A10 10 0 1 0 21.31 8.35M16.24 7.76A6 6 0 1 0 8.23 16.67M12 18h.01M17.99 11.66A6 6 0 0 1 15.77 16.67"/><circle cx="12" cy="12" r="2"/><path d="m13.41 10.59 5.66-5.66"/></symbol></svg>
+<a class="skip-link" href="#main">Lewati ke konten utama</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="PT BKI — Beranda"><img src="assets/img/logo-dark.png" alt="PT BKI" width="150" height="43"></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Buka menu">
+      <svg class="icon icon-open" aria-hidden="true"><use href="#i-menu"/></svg>
+      <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+    <nav class="main-nav" id="site-nav" aria-label="Navigasi utama">
+      <ul class="nav-list"><li><a href="index.html">Beranda</a></li><li><a href="tentang.html">Tentang Kami</a></li><li><a href="solusi.html" aria-current="page">Solusi</a></li><li><a href="industri.html">Industri</a></li><li><a href="klien.html">Klien</a></li><li class="nav-cta"><a class="btn btn--primary" href="kontak.html">Hubungi Kami</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-head">
+  <div class="container page-head__inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Beranda</a><span aria-hidden="true">/</span><span>Solusi</span></nav>
+    <span class="eyebrow" lang="en">Our Solutions</span>
+    <h1 lang="en">BKIConnect.</h1>
+    <p>Solusi konektivitas satelit terkelola untuk kapal dan lokasi terpencil: perangkat, jaringan, integrasi, dan monitoring dalam satu paket.</p>
+  </div>
+</section>
+
+<div class="subnav" aria-label="Bagian halaman">
+  <div class="container">
+    <ul>
+      <li><a href="#bkiconnect">BKIConnect</a></li>
+      <li><a href="#paket">Paket</a></li>
+      <li><a href="#teknologi">Teknologi</a></li>
+      <li><a href="#proses">Proses</a></li>
+    </ul>
+  </div>
+</div>
+
+<section class="section" id="bkiconnect">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" lang="en">One Partner, Complete Solution</span>
+      <h2>Empat lapisan yang bekerja sebagai satu sistem.</h2>
+      <p>BKIConnect bukan hanya antena. Kami menyediakan seluruh lapisan yang dibutuhkan agar kapal Anda terhubung dan terpantau.</p>
+    </div>
+    <ol class="layers">
+      <li class="layer"><div><h3>Satellite Connectivity</h3><p>Kuota dan koneksi internet berkecepatan tinggi di laut, dengan jalur cadangan pada paket Standard ke atas.</p></div></li>
+      <li class="layer"><div><h3>BKI Vessel Network</h3><p>Router, firewall, VoIP, Wi-Fi, VLAN, dan bandwidth policy yang dikonfigurasi sesuai kebutuhan kapal.</p></div></li>
+      <li class="layer"><div><h3>Operational Integration</h3><p>Akses CCTV, akses lokal, laporan, akses kantor, dan jaringan kru dalam satu jaringan terkelola.</p></div></li>
+      <li class="layer"><div><h3>BKI Service Layer</h3><p>Monitoring NOC, dukungan teknis, pemeliharaan, dan pelaporan.</p></div></li>
+    </ol>
+
+    <h3 class="sub-title">Dashboard monitoring</h3>
+    <div class="grid grid--3">
+      <article class="card"><div class="icon-badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-activity"/></svg></div><h3>Status online/offline</h3><p>Pantau kondisi koneksi setiap kapal dari satu dashboard.</p></article>
+      <article class="card"><div class="icon-badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg></div><h3>Posisi perangkat</h3><p>Lihat status posisi perangkat di setiap kapal.</p></article>
+      <article class="card"><div class="icon-badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-wrench"/></svg></div><h3>Kontrol jarak jauh</h3><p>Tim BKI dan Anda dapat melakukan pengaturan jaringan tanpa harus naik ke kapal.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="paket">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" lang="en">Plans</span>
+      <h2 lang="en">Four tiers. One growing layer of protection.</h2>
+      <p>Setiap tingkat BKIConnect menambah perlindungan koneksi. Mulai dari koneksi terkelola yang hemat, hingga dua jaringan independen untuk operasional yang tidak boleh terputus. Seluruh paket tersedia untuk kebutuhan <strong>lokal</strong> dan <strong>internasional</strong>.</p>
+    </div>
+
+    <div class="included">
+      <h3>Termasuk di semua paket BKIConnect</h3>
+      <ul class="checklist">
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Kuota dan koneksi internet di laut</span></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Perangkat penerima satelit, dengan pilihan beli atau sewa</span></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Router dan firewall disediakan</span></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Dashboard M-Star: status online/offline, posisi perangkat, kontrol jarak jauh</span></li>
+      </ul>
+      <ul class="checklist">
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Dukungan teknis dan monitoring 24/7 (NOC)</span></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>SLA 99%</span></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Konfigurasi oleh tim BKI</span></li>
+      </ul>
+    </div>
+
+    <div class="grid grid--4 tiers">
+      <article class="plan">
+        <div class="tier-meter" role="img" aria-label="Tingkat 1 dari 4"><span class="on"></span><span></span><span></span><span></span></div>
+        <span class="plan__tag" lang="en">Level 1 · Essential</span>
+        <h3>BKIConnect Lite</h3>
+        <p class="plan__config">Koneksi terkelola yang hemat.</p>
+        <p class="plan__backup plan__backup--none">Tanpa jalur cadangan</p>
+        <p>Pintu masuk paling terjangkau ke internet di laut, lengkap dengan jaringan kapal dan monitoring.</p>
+        <h4>Isi paket</h4>
+        <ul class="checklist"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Satu jalur koneksi satelit</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Router dan firewall</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Dashboard M-Star</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Monitoring dan dukungan 24/7</span></li></ul>
+        <h4>Manfaat</h4>
+        <p>Biaya paling hemat untuk komunikasi dan operasional dasar kapal.</p>
+      </article>
+
+      <article class="plan">
+        <div class="tier-meter" role="img" aria-label="Tingkat 2 dari 4"><span class="on"></span><span class="on"></span><span></span><span></span></div>
+        <span class="plan__tag" lang="en">Level 2 · Protected</span>
+        <h3>BKIConnect Standard</h3>
+        <p class="plan__config">Cadangan otomatis, tanpa repot.</p>
+        <p class="plan__backup">Dengan jalur cadangan</p>
+        <p>Semua manfaat Lite, ditambah jalur cadangan. Bila jalur utama terganggu, koneksi berpindah otomatis.</p>
+        <h4>Isi paket</h4>
+        <ul class="checklist"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Jalur utama dan jalur cadangan</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Router dan firewall</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Dashboard M-Star</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Konfigurasi oleh tim BKI</span></li></ul>
+        <h4>Manfaat</h4>
+        <p>Koneksi tetap jalan saat perangkat utama bermasalah. Kru tidak perlu mengatur apa pun, dan pemasangan praktis serta cepat.</p>
+      </article>
+
+      <article class="plan plan--featured">
+        <div class="tier-meter" role="img" aria-label="Tingkat 3 dari 4"><span class="on"></span><span class="on"></span><span class="on"></span><span></span></div>
+        <span class="plan__tag" lang="en">Level 3 · Maritime-grade</span>
+        <h3>BKIConnect Plus</h3>
+        <p class="plan__config">Jalur utama kelas maritim.</p>
+        <p class="plan__backup">Dengan jalur cadangan</p>
+        <p>Semua manfaat Standard, dengan jalur utama yang dirancang khusus untuk kapal sehingga lebih stabil saat bergerak.</p>
+        <h4>Isi paket</h4>
+        <ul class="checklist"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Jalur utama khusus maritim</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Jalur cadangan fleksibel</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Router dan firewall</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Dashboard M-Star</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Konfigurasi oleh tim BKI</span></li></ul>
+        <h4>Manfaat</h4>
+        <p>Koneksi utama lebih stabil di laut. Jalur cadangan juga dapat dimanfaatkan saat kapal berada dekat pesisir pantai.</p>
+      </article>
+
+      <article class="plan">
+        <div class="tier-meter" role="img" aria-label="Tingkat 4 dari 4"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span></div>
+        <span class="plan__tag" lang="en">Level 4 · Fully redundant</span>
+        <h3>BKIConnect Prime</h3>
+        <p class="plan__config">Dua jaringan, satu kendali.</p>
+        <p class="plan__backup">Cadangan di jaringan terpisah</p>
+        <p>Semua manfaat Plus, dengan jalur cadangan di jaringan satelit yang berbeda dan independen dari jalur utama.</p>
+        <h4>Isi paket</h4>
+        <ul class="checklist"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Jalur utama khusus maritim</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Jalur cadangan di jaringan berbeda</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Satu router, satu dashboard</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Konfigurasi oleh tim BKI</span></li></ul>
+        <h4>Manfaat</h4>
+        <p>Tetap terhubung walau salah satu jaringan terganggu. Cocok untuk operasional kritis 24/7, offshore, dan pelayaran internasional.</p>
+        <p class="plan__note">Jalur cadangan diutamakan untuk keandalan; performanya dapat terpengaruh hujan lebat.</p>
+      </article>
+    </div>
+
+    <h3 class="sub-title">Bandingkan tingkat perlindungan</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Aspek</th><th scope="col">Lite</th><th scope="col">Standard</th><th scope="col" class="hl">Plus</th><th scope="col">Prime</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Jalur koneksi</th><td>Tunggal</td><td>Utama + cadangan</td><td class="hl">Utama + cadangan</td><td>Utama + cadangan</td></tr>
+          <tr><th scope="row">Jalur cadangan</th><td>Tidak ada</td><td>Ada</td><td class="hl">Ada</td><td>Ada, di jaringan terpisah</td></tr>
+          <tr><th scope="row">Jalur utama</th><td>Standar</td><td>Standar</td><td class="hl">Khusus maritim</td><td>Khusus maritim</td></tr>
+          <tr><th scope="row">Router, firewall &amp; dashboard</th><td>Ya</td><td>Ya</td><td class="hl">Ya</td><td>Ya</td></tr>
+          <tr><th scope="row">Monitoring &amp; dukungan 24/7</th><td>Ya</td><td>Ya</td><td class="hl">Ya</td><td>Ya</td></tr>
+          <tr><th scope="row">Cocok untuk</th><td>Operasional dan komunikasi dasar</td><td>Operasional harian yang tidak boleh terputus</td><td class="hl">Pelayaran jarak jauh dan kondisi laut berat</td><td>Operasi kritis 24/7, offshore, internasional</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="sub-title">Paket kuota</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Paket</th><th scope="col">Cocok untuk</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Kuota 500GB</th><td>Operasional dan komunikasi dasar</td></tr>
+          <tr><th scope="row">Kuota 1TB</th><td>Internet kru aktif + monitoring</td></tr>
+          <tr><th scope="row">Kuota 2TB</th><td>Kapal digital penuh: video, aplikasi cloud, kru intensif</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="sub-title">Paket kecepatan</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Paket</th><th scope="col">Kecepatan</th><th scope="col">Cocok untuk</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Speed 2</th><td>2/2 Mbps</td><td>Komunikasi dasar, email, AIS</td></tr>
+          <tr><th scope="row">Speed 8</th><td>8/8 Mbps</td><td>Kru + aplikasi operasional</td></tr>
+          <tr><th scope="row">Speed Max</th><td>Hingga 150/25 Mbps</td><td>Video, cloud, banyak pengguna</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">Kuota dapat ditambah melalui top up. Harga fleksibel dan disesuaikan dengan kebutuhan Anda.</p>
+  </div>
+</section>
+
+<section class="section" id="teknologi">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" lang="en">Our Technology</span>
+      <h2 lang="en">Two orbits. One managed solution.</h2>
+      <p>BKIConnect memadukan jaringan satelit LEO dan GEO dengan solusi jaringan kapal dan layanan milik BKI sendiri.</p>
+    </div>
+
+    <div class="grid grid--3">
+      <article class="card">
+        <div class="icon-badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-globe"/></svg></div>
+        <h3>Kapasitas satelit global</h3>
+        <p>Kami membeli kapasitas dari operator satelit global, yaitu jaringan LEO seperti <strong>Starlink</strong> dan jaringan GEO. Satelit dimiliki dan dioperasikan oleh operatornya, bukan BKI.</p>
+      </article>
+      <article class="card">
+        <div class="icon-badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-layers"/></svg></div>
+        <h3>Solusi milik BKI</h3>
+        <p>Kapasitas tersebut kami padukan dengan jaringan kapal, integrasi operasional, dashboard monitoring, dan dukungan NOC 24/7 yang kami rancang sendiri.</p>
+      </article>
+      <article class="card">
+        <div class="icon-badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ship"/></svg></div>
+        <h3>Kuota dan koneksi di laut</h3>
+        <p>Anda menerima kuota dan koneksi internet di laut dalam satu paket terkelola, dengan satu pintu layanan dari BKI.</p>
+      </article>
+    </div>
+
+    <div class="split split--top tech-split">
+      <div class="orbit">
+        <svg viewBox="0 0 520 340" role="img" aria-labelledby="orbit-title">
+          <title id="orbit-title">Perbandingan orbit LEO dan GEO terhadap Bumi</title>
+          <ellipse cx="260" cy="330" rx="240" ry="56" fill="#0a4a7c" stroke="#7fd4ff" stroke-opacity=".5"/>
+          <text x="260" y="336" text-anchor="middle" fill="#fff" font-size="16" font-family="Lexend, sans-serif">BUMI</text>
+          <path d="M40 300 C 90 150, 430 150, 480 300" fill="none" stroke="#00adef" stroke-width="2" stroke-dasharray="5 5"/>
+          <circle cx="260" cy="190" r="14" fill="#00adef"/>
+          <text x="284" y="186" fill="#fff" font-size="15" font-weight="600" font-family="Lexend, sans-serif">LEO · ±550 km</text>
+          <text x="284" y="206" fill="#9fd8f7" font-size="14" font-family="Source Sans 3, sans-serif">Latensi 25–60 ms</text>
+          <path d="M20 300 C 60 20, 460 20, 500 300" fill="none" stroke="#c26bd8" stroke-width="2" stroke-dasharray="5 5"/>
+          <circle cx="260" cy="48" r="18" fill="#c26bd8"/>
+          <text x="288" y="44" fill="#fff" font-size="15" font-weight="600" font-family="Lexend, sans-serif">GEO · ±35.786 km</text>
+          <text x="288" y="64" fill="#e9c4f2" font-size="14" font-family="Source Sans 3, sans-serif">Latensi 600–800 ms</text>
+        </svg>
+      </div>
+      <ul class="checklist">
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span><strong>LEO (Low Earth Orbit)</strong> mengorbit jauh lebih dekat ke Bumi. Latensinya rendah, sehingga video meeting, akses cloud, VoIP, dan aplikasi real-time terasa responsif.</span></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span><strong>GEO (Geostationary Orbit)</strong> berada di jaringan terpisah dari LEO. Karena independen, GEO menjadi jalur cadangan yang andal pada paket tertinggi.</span></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span><strong>Dikelola BKI sebagai satu sistem.</strong> Perpindahan antar jalur, pengaturan jaringan, dan monitoring ditangani dalam satu router dan satu dashboard.</span></li>
+      </ul>
+    </div>
+
+    <h3 class="sub-title">Satelit GEO vs. LEO</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Aspek</th><th scope="col">Satelit GEO</th><th scope="col">Satelit LEO</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Ketinggian orbit</th><td>±35.786 km</td><td>±550 km</td></tr>
+          <tr><th scope="row">Latensi</th><td>600–800 ms</td><td>20–50 ms</td></tr>
+          <tr><th scope="row">Kecepatan</th><td>10–50 Mbps (tergantung layanan)</td><td>50–250 Mbps++</td></tr>
+          <tr><th scope="row">Mobilitas</th><td>Lebih sulit dipindahkan</td><td>Mudah dipindahkan</td></tr>
+          <tr><th scope="row">Instalasi</th><td>Perlu teknisi profesional</td><td>Praktis</td></tr>
+          <tr><th scope="row">Gangguan cuaca</th><td>Lebih rentan terhadap cuaca</td><td>Lebih adaptif terhadap cuaca</td></tr>
+          <tr><th scope="row">Peran di BKIConnect</th><td>Jalur cadangan independen</td><td>Jalur utama dan cadangan</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="notice section-more"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-info"/></svg><p>BKI tidak memiliki satelit. Kami membeli kapasitas dari operator satelit, lalu menyediakannya sebagai kuota dan koneksi internet di laut bersama solusi dan layanan BKI. Starlink adalah merek dagang dari pemiliknya.</p></div>
+  </div>
+</section>
+
+<section class="section" id="proses">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" lang="en">Next Steps</span>
+      <h2 lang="en">From consultation to activation.</h2>
+      <p>Enam langkah dari konsultasi sampai layanan aktif dan terpantau.</p>
+    </div>
+    <ol class="steps">
+      <li class="step"><h3>Konsultasi</h3><p>Memahami kebutuhan pelanggan, jenis kapal/lokasi, jumlah user, dan kebutuhan operasional.</p></li>
+      <li class="step"><h3>Penilaian</h3><p>Menentukan titik pemasangan, jalur kabel, kebutuhan mounting, dan jaringan internal.</p></li>
+      <li class="step"><h3>Proposal &amp; Desain</h3><p>Rekomendasi perangkat, paket layanan, dan skema instalasi yang sesuai.</p></li>
+      <li class="step"><h3>Instalasi</h3><p>Pemasangan perangkat, konfigurasi jaringan, dan integrasi dengan perangkat pendukung.</p></li>
+      <li class="step"><h3>Testing &amp; Aktivasi</h3><p>Pengujian koneksi, coverage, speed, stability, dan akses user.</p></li>
+      <li class="step"><h3>Monitoring &amp; Support</h3><p>Support teknis setelah layanan aktif untuk menjaga koneksi tetap optimal.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container cta__inner">
+    <div>
+      <h2 lang="en">Find the right plan for your fleet.</h2>
+      <p>Tim BKI akan membantu memilih paket dan perangkat yang sesuai dengan jenis kapal dan kebutuhan operasional Anda.</p>
+    </div>
+    <a class="btn btn--light" href="kontak.html">Minta Penawaran <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/logo-light.png" alt="PT BKI" width="160" height="46">
+        <p>PT Bintang Khatulistiwa Internusa — solusi konektivitas satelit terkelola untuk operasional maritim dan lokasi terpencil.</p>
+      </div>
+      <div>
+        <h2>Navigasi</h2>
+        <ul class="footer-links">
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="solusi.html">Solusi BKIConnect</a></li>
+          <li><a href="industri.html">Industri</a></li>
+          <li><a href="klien.html">Klien</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Kontak</h2>
+        <ul class="footer-contact">
+          <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg><span>Jl. Pangeran Tubagus Angke Blok G No. 1,<br>Jakarta Barat 11460</span></li>
+          <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg><a href="tel:+628131705550">+62 813-1705-550</a></li>
+          <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg><a href="mailto:admin@bkin.co.id">admin@bkin.co.id</a></li>
+        </ul>
+        <ul class="social" aria-label="Media sosial BKI">
+          <li><a href="https://www.instagram.com/bkin.co.id/" target="_blank" rel="noopener" aria-label="Instagram BKI"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/company/pt-bintang-khatulistiwa-internusa/" target="_blank" rel="noopener" aria-label="LinkedIn BKI"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>BKI adalah penyedia solusi integrasi konektivitas satelit terkelola. Kapasitas satelit diperoleh dari operator satelit global melalui mitra resmi. Seluruh merek dagang adalah milik pemiliknya masing-masing.</p>
+      <p>&copy; 2026 PT Bintang Khatulistiwa Internusa. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
